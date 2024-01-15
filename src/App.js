@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
 
 function App() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    // Pobieramy dane z serwera Flask po załadowaniu komponentu
+    fetch('/api/data')
+      .then(response => response.json())
+      .then(data => setData(data))
+      .catch(error => console.error('Error fetching data:', error));
+  }, []); // Pusty array [] oznacza, że hook useEffect wykona się tylko raz po załadowaniu komponentu
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Invoice App</h1>
+      {data ? (
+        <div>
+          <h2>Client Data:</h2>
+          <p>Name: {data.name}</p>
+          <p>Age: {data.age}</p>
+          <p>Email: {data.email}</p>
+        </div>
+      ) : (
+        <p>Loading data...</p>
+      )}
     </div>
   );
 }
