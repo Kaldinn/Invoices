@@ -1,0 +1,36 @@
+.navbar{
+    background-color: royalblue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+p{
+    padding: 1rem;
+    color: white;
+    font-size: 2em;
+}
+button{
+    display: flex;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+    font-size: 2em;
+    color: white;
+}
+svg{
+    padding: .5rem;
+}
+svg:hover{
+    background-color: rgba(82, 123, 244, 0.457);
+    border-radius: 30%;
+}
+.user-icon {
+    margin-left: auto;
+}
+
