@@ -7,22 +7,25 @@
     height: auto;
     overflow: hidden;
 }
-p{
+.navbar > p{
     padding: 1rem;
     color: white;
     font-size: 2em;
 }
-button{
+.navbar > button{
     display: flex;
     background: none;
 	color: inherit;
 	border: none;
 	padding: 0;
-    margin-left: 1rem;
-    margin-right: 1.5rem;
     font-size: 2em;
     color: white;
 }
+.menu-icon{
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+}
+
 svg{
     padding: .5rem;
 }
@@ -32,5 +35,6 @@ svg:hover{
 }
 .user-icon {
     margin-left: auto;
+    margin-right: 2rem;
 }
 

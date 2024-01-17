@@ -1,14 +1,41 @@
-menu{
+.menu{
     margin-right: auto;
-    width: 5%;
+    width: 3%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     padding: 0;
-    height: 90vh;
-    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    height: 85vh;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.expanded-menu{
+    margin-right: auto;
+    width: 15%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    height: 85vh;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 .menu-buttons svg{
     color: black;
+}
+menu > button{
+    display: flex;
+    justify-content: center;
+    background: none;
+    padding: 0;
+    margin: 2rem 0 2rem 0;
+    font-size: 2rem;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+svg{
+    
 }
