@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import Nav from './components/Nav/Nav';
-
-
+import React from 'react';
+import Navbar from './Navbar/Navbar';
+import Home from './Home/Home';
 
 function App() {
 
   return (
-    <main>
-      <Nav
-      />
-    </main>
-
+    <div className="App">
+    <Navbar />
+      <div className='content'>
+        <Home />
+      </div>
+    </div>
   );
 }
 
