@@ -1,0 +1,22 @@
+menu{
+    background-color: rgba(211, 211, 211, 1);
+    padding: 0;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 3px 5px;
+    border-radius: 5px;
+
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+    margin: 4vh;
+    width: 100%;
+}
+li{
+    border-bottom: 1px solid rgba(1,1,1,.25);
+}
