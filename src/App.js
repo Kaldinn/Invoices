@@ -1,14 +1,28 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from './Navbar/Navbar';
 import Home from './Home/Home';
 import Sidemenu from './Sidemenu/Sidemenu';
-function App() {
 
+function App() {
+  const [menu, setMenu] = useState(false)
+
+  const toggleMenu = () =>{
+      if(menu){
+        setMenu(false)
+      }else{
+        setMenu(true)
+      }
+  }
   return (
     <div className="App">
-    <Navbar />
+    <Navbar
+      toggleMenu={toggleMenu}
+    />
       <div className='content'>
-        <Sidemenu />
+        <Sidemenu
+          toggleMenu={toggleMenu}
+          menu={menu}
+        />
         <Home />
       </div>
     </div>

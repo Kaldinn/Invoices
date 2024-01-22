@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import '../Sidemenu/Sidemenu.css'
 
-const Sidemenu = () => {
+const Sidemenu = (props) => {
 
-    const [menu, setMenu] = useState()
+    console.log(props.menu)
   return (
     <menu>
         <ul>

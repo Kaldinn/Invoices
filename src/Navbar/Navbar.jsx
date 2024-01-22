@@ -3,17 +3,11 @@ import '../Navbar/Navbar.css'
 import { IoMenu } from "react-icons/io5";
 
 
-const Navbar = ( ) => {
-
-  const [menu, setMenu] = useState()
-
-  const toggleMenu = () =>{
-      
-  }
+const Navbar = (props) => {
 
   return (
     <nav className='navbar'>
-      <button onClick={toggleMenu}><IoMenu /></button>
+      <button onClick={props.toggleMenu}><IoMenu /></button>
       <h1>Dashboard</h1>
       <div className='links'>
           <a href='/'>Home</a>
