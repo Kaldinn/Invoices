@@ -17,8 +17,11 @@ const Home = () => {
       <h1>CONTENT</h1>
       <h1>CONTENT</h1>
       <h1>CONTENT</h1>
+      <h1>CONTENT</h1>
+      <h1>CONTENT</h1>
     </div>
   )
 }
 
 export default Home
+
