@@ -7,7 +7,6 @@ app.config['SECRET_KEY'] = 'secret_key'
 @app.route('/api/add_invoice', methods=['GET'])
 def add_invoice():
     form = AddInvoice()
-    print(form)
     x = {
         "daniel":23,
         "natalia":22

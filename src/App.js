@@ -3,13 +3,14 @@ import DashboardChart from './DashboardChart/DashboardChart';
 import AddInvoice from './AddInvoice/AddInvoice';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Layout from './Layout/Layout';
+import FormInvoices from './FormInvoices/FormInvoices';
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<><DashboardChart /><Home /></>} />
-      <Route path="add_invoice" element={<AddInvoice />} />
+      <Route path="add_invoice" element={<FormInvoices />} />
     </Route>
   )
 )
