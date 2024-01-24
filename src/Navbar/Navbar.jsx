@@ -10,12 +10,14 @@ const Navbar = (props) => {
       <button onClick={props.toggleMenu}><IoMenu /></button>
       <h1>Dashboard</h1>
       <div className='links'>
-          <NavLink to="/"><a href='/'>Home</a></NavLink>
-          <NavLink to="add_invoice"><a href='/' style={{
-            color: "white",
-            backgroundColor: "#f1356d",
-            borderRadius: '8px'
-          }}>Add Invoice</a> </NavLink>
+      <NavLink to="/">Home</NavLink>
+        <NavLink to="/add_invoice" style={{
+          color: 'white',
+          backgroundColor: '#f1356d',
+          borderRadius: '8px',
+        }}>
+          Add Invoice
+        </NavLink>
       </div>
     </nav>
   )
