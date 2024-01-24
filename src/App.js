@@ -1,32 +1,22 @@
-import React, {useState} from 'react';
-import Navbar from './Navbar/Navbar';
 import Home from './Home/Home';
-import Sidemenu from './Sidemenu/Sidemenu';
 import DashboardChart from './DashboardChart/DashboardChart';
+import AddInvoice from './AddInvoice/AddInvoice';
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import Layout from './Layout/Layout';
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Layout />}>
+      <Route index element={<><DashboardChart /><Home /></>} />
+      <Route path="add_invoice" element={<AddInvoice />} />
+    </Route>
+  )
+)
 
 function App() {
-
-  const [menu, setMenu] = useState(false)
-
-  const toggleMenu = () => {
-    setMenu(prevMenu => !prevMenu);
-    console.log(menu)
-};
-
-
   return (
-    <div className="App">
-    <Navbar 
-      toggleMenu={toggleMenu}
-    />
-      <div className='content'>
-        <Sidemenu
-          menu={menu}
-        />
-        <DashboardChart />
-        <Home />
-      </div>
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
