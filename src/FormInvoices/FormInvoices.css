@@ -1,0 +1,14 @@
+.add-invoice{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    width: 100%;
+}
+.add-invoice #outlined-basic{
+    background-color: white;
+    border-radius: 5px;
+}
+.MuiFormControl-root{
+    background-color: white;
+    border-radius: 5px;
+}

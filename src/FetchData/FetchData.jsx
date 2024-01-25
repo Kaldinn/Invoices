@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const AddInvoice = () => {
+const FetchData = () => {
     const [dataFromServer, setDataFromServer] = useState('');
 
     useEffect(() => {
@@ -24,4 +24,4 @@ const AddInvoice = () => {
     );
 }
 
-export default AddInvoice;
+export default FetchData;

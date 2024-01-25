@@ -1,11 +1,10 @@
-import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import Sidemenu from '../Sidemenu/Sidemenu'
 import { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 
-const Layout = () => {
 
+const Layout = () => {
     const [menu, setMenu] = useState(false)
 
     const toggleMenu = () => {

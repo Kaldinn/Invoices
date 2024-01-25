@@ -1,6 +1,5 @@
 import Home from './Home/Home';
 import DashboardChart from './DashboardChart/DashboardChart';
-import AddInvoice from './AddInvoice/AddInvoice';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import FormInvoices from './FormInvoices/FormInvoices';
