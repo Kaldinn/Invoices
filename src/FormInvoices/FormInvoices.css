@@ -1,14 +1,43 @@
 .add-invoice{
     display: flex;
     justify-content: space-around;
-    margin: 1rem;
+    margin: 0;
     width: 100%;
-}
-.add-invoice #outlined-basic{
-    background-color: white;
-    border-radius: 5px;
 }
 .MuiFormControl-root{
     background-color: white;
     border-radius: 5px;
+}
+.date-fields{
+    display:  flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0;
+}
+.contractor button{
+    color: white;
+    border: 1px solid black !important;
+    background-color: rgba(0, 0, 0, 0.783);
+}
+.contractor-credentials{
+    border: 1px solid rgba(0,0,0,.25);
+    margin-top: 1rem;
+    width: 100%;
+    
+}
+.contractor-credentials ul li{
+    width: 100%;
+
+}
+.summary{
+    display: flex;
+}
+.summary ul li{
+    justify-content: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+.summary p{
+    padding-left: 1rem;
+    font-weight: bold;
 }
