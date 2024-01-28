@@ -1,0 +1,13 @@
+.contractor button{
+    color: white;
+    border: 1px solid black !important;
+    background-color: rgba(0, 0, 0, 0.783);
+}
+.contractor-credentials{
+    border: 1px solid rgba(0,0,0,.25);
+    margin-top: 1rem;
+    width: 100%;
+}
+.contractor-credentials ul li{
+    width: 2vw;
+}

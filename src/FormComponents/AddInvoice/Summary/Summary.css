@@ -1,0 +1,12 @@
+.summary{
+    display: flex;
+}
+.summary ul li{
+    justify-content: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+.summary p{
+    padding-left: 1rem;
+    font-weight: bold;
+}

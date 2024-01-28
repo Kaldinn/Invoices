@@ -1,0 +1,35 @@
+.add-invoice{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 40% 40% 20%;
+    margin: 10px;
+    grid-gap: 1rem;
+    width: 100%;
+}
+.MuiFormControl-root{
+    background-color: white;
+    border-radius: 5px;
+}
+.contractor{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+}
+.date-fields{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display:  flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0;
+}
+.summary{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.add-product{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    width: 100%;
+
+}

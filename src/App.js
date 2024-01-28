@@ -2,7 +2,7 @@ import Home from './Home/Home';
 import DashboardChart from './DashboardChart/DashboardChart';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Layout from './Layout/Layout';
-import FormInvoices from './FormInvoices/FormInvoices';
+import FormInvoices from './AddInvoiceView/FormInvoices';
 
 
 const router = createBrowserRouter(
