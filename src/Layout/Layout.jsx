@@ -9,7 +9,6 @@ const Layout = () => {
 
     const toggleMenu = () => {
       setMenu(prevMenu => !prevMenu);
-      console.log(menu)
   };
 
   return (

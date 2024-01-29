@@ -44,7 +44,7 @@
     padding: .5vw;
 }
 
-ul{
+.menu-open ul{
     display: flex;
     justify-content: space-between;
     flex-direction: column;

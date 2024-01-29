@@ -6,8 +6,8 @@ const Summary = () => {
   return (
     <Box>
        <ul>
-          <li>Summary: <p>23</p></li>
-          <li>VAT: <p>23</p></li>
+          <li>Summary: <p>299 zł</p></li>
+          <li>VAT: <p>23%</p></li>
           <li>Netto: <p>23</p></li>
           <li>Discount: <p>23</p></li>
           <li>Margin: <p>23</p></li>

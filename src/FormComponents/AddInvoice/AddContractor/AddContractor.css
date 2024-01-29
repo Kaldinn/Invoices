@@ -1,13 +1,26 @@
 .contractor button{
     color: white;
-    border: 1px solid black !important;
-    background-color: rgba(0, 0, 0, 0.783);
-}
-.contractor-credentials{
-    border: 1px solid rgba(0,0,0,.25);
-    margin-top: 1rem;
     width: 100%;
 }
-.contractor-credentials ul li{
-    width: 2vw;
+
+.contractor-credentials{
+    width: 25vw;
+    box-shadow: 1px 3px 5px;
+    border-radius: 5px;
+    background-color: rgb(203, 200, 200);
+    border: 1px solid rgba(0,0,0,.25);
+    margin-top: 1rem;
+}
+.contractor-credentials ul{
+    margin: 0;
+    padding: 2rem;
+}
+.contractor-credentials  ul li{
+    justify-content: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+.contractor p{
+    padding-left: 1rem;
+    font-weight: bold;
 }

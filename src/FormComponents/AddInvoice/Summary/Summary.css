@@ -5,6 +5,7 @@
     justify-content: flex-start;
     display: flex;
     justify-content: space-between;
+    width: 13vw;
 }
 .summary p{
     padding-left: 1rem;
