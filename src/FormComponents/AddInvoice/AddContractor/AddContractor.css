@@ -2,14 +2,18 @@
     color: white;
     width: 100%;
 }
+.contractor-credentials{
+    border: 1px solid rgba(0,0,0,.25);
+    margin-top: 1rem;
+    width: 100%;
+}
 
 .contractor-credentials{
-    width: 25vw;
+    width: 20vw;
     box-shadow: 1px 3px 5px;
     border-radius: 5px;
     background-color: rgb(203, 200, 200);
-    border: 1px solid rgba(0,0,0,.25);
-    margin-top: 1rem;
+
 }
 .contractor-credentials ul{
     margin: 0;

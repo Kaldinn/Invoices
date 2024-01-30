@@ -4,7 +4,6 @@ import DateSelectPicker  from '../FormComponents/AddInvoice/DateSelectPicker/Dat
 import AddContractor from '../FormComponents/AddInvoice/AddContractor/AddContractor.jsx'
 import Summary from '../FormComponents/AddInvoice/Summary/Summary.jsx'
 import AddProduct from '../FormComponents/AddInvoice/AddProduct/AddProduct.jsx';
-import { Box } from '@mui/material'
 import "./FormInvoices.css"
 
   const addProductButton = {

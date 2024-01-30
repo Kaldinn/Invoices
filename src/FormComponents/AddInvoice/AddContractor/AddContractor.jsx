@@ -21,10 +21,10 @@ const AddContractor = () => {
         <Button variant="contained" sx={addProductButton}>Add Contractor</Button>
         <div className='contractor-credentials'>
           <ul>
-            <li>NIP: <p>741-143-61-45</p></li>
-            <li>Company Name: <p>INWERO Robert</p></li>
-            <li>City: <p>14-300, Morąg</p></li>
-            <li>Address: <p>ul. Dąbrowskiego 46</p></li>
+            <li>NIP: <p>741-141-23-42</p></li>
+            <li>Company Name: <p>INWEDA Daniel</p></li>
+            <li>City: <p>14-313, Olsztyn</p></li>
+            <li>Address: <p>ul. Bema 49</p></li>
           </ul>
         </div>
     </Box>

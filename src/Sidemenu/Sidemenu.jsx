@@ -7,7 +7,7 @@ import { FaMoneyBillTransfer } from "react-icons/fa6";
 
 const Sidemenu = ({ menu }) => {
   return (
-    <sidebar className={menu ? "menu-open" : "menu-closed"}>
+    <div className={menu ? "menu-open" : "menu-closed"}>
       <ul>
         {menu ? (
           <>
@@ -25,7 +25,7 @@ const Sidemenu = ({ menu }) => {
           </>
         )}
       </ul>
-    </sidebar>
+    </div>
   );
 }
 
