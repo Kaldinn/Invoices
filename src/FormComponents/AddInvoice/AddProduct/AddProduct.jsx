@@ -27,20 +27,17 @@ const AddProduct = () => {
   const [vat, setVat] = useState('');
 
   const handleAddProduct = async () => {
-    const data = {
-      productName,
-      quantity,
-      price,
-      vat
-    };
+    const formData = new FormData()
+    formData.append('product_name', productName)
+    formData.append('quantity', quantity)
+    formData.append('price', price)
+    formData.append('vat', vat)
+  
 
     try {
       const response = await fetch('/get_product', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
+        body: formData
       });
 
       if (response.ok) {

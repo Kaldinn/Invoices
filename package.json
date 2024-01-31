@@ -31,7 +31,7 @@
   },
   "scripts": {
     "start": "npm-run-all -p start-flask start-react",
-    "start-flask": "cd server && venv\\scripts\\activate && flask run",
+    "start-flask": "cd server && venv\\scripts\\activate && flask run --debug",
     "start-react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

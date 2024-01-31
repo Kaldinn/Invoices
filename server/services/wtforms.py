@@ -9,6 +9,9 @@ class AddInvoice(FlaskForm):
     payment_date = DateField('Payment Date', validators=[DataRequired()])
 
 class AddProducts(FlaskForm):
+    class Meta:
+        csrf = False
+        
     product_name = StringField('Product Name', validators=[DataRequired()])
     quantity = IntegerField('Quantity', validators=[DataRequired()])
     price = FloatField('Price', validators=[DataRequired()])
