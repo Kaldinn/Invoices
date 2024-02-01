@@ -32,7 +32,7 @@ const AddProduct = () => {
     formData.append('quantity', quantity)
     formData.append('price', price)
     formData.append('vat', vat)
-  
+
 
     try {
       const response = await fetch('/get_product', {
@@ -48,7 +48,6 @@ const AddProduct = () => {
       console.error('Error adding product:', error.message);
     }
   };
-
   return (
     <div className="add-product">
       <TextField
@@ -72,7 +71,7 @@ const AddProduct = () => {
         value={price}
         onChange={(e) => setPrice(e.target.value)}
       />
-      <FormControl style={{ width: '5vw' }}>
+      <FormControl fullWidth>
         <InputLabel id="vat-label">Vat</InputLabel>
         <Select
           labelId="vat-label"

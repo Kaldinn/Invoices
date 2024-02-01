@@ -8,15 +8,6 @@ app.config['SECRET_KEY'] = 'secret_key'
 def add_invoice():
     form = AddProducts()
     
-    product_name = request.form.get('product_name')
-    quantity = request.form.get('quantity')
-    price = request.form.get('price')
-    vat = request.form.get('vat')
-
-    print(product_name)
-    print(quantity)
-    print(price)
-    print(vat)
 
     if form.validate():
         print('valid')
@@ -24,7 +15,6 @@ def add_invoice():
         quantity = request.form.get('quantity')
         price = request.form.get('price')
         vat = request.form.get('vat')
-        #NAZWA W post w dict musi byc ta sama co w form get   
         print(product_name)
         print(quantity)
         print(price)

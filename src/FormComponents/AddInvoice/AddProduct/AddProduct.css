@@ -1,4 +1,6 @@
 .add-product{
+    grid-row: 1/2;
+    grid-column: 1/2;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }

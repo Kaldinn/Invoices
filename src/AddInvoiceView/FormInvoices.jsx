@@ -5,6 +5,7 @@ import AddContractor from '../FormComponents/AddInvoice/AddContractor/AddContrac
 import Summary from '../FormComponents/AddInvoice/Summary/Summary.jsx'
 import AddProduct from '../FormComponents/AddInvoice/AddProduct/AddProduct.jsx';
 import "./FormInvoices.css"
+import ProductsList from '../FormComponents/ProductsList/ProductsList.jsx';
 
   const addProductButton = {
     "&":{
@@ -22,16 +23,13 @@ const FormInvoices = () => {
 
   const [isHidden, setIsHidden] = useState(false)
 
-
   const handleVisibilityProductDiv = () => {
     setIsHidden(prevIsHidden => !prevIsHidden);
   }
 
 
-
   return (
     <form className='add-invoice'>
-
       <div className='contractor'>
         <AddContractor />
       </div>
@@ -47,9 +45,14 @@ const FormInvoices = () => {
         </Button>
       </div>
       {isHidden && (
-        <div className='products'>
+        <>
+        <div className='add-product-form'>
           <AddProduct />
         </div>
+        <div className='product-list'>
+          <ProductsList />
+        </div>
+      </>
       )}
 
 
