@@ -27,6 +27,14 @@ const FormInvoices = () => {
     setIsHidden(prevIsHidden => !prevIsHidden);
   }
 
+  const [receivedValue, setReceivedValue] = useState('');
+
+  const handleChildValue = (value) => {
+    setReceivedValue(value);
+    console.log(receivedValue)
+  };
+
+
 
   return (
     <form className='add-invoice'>
@@ -47,10 +55,10 @@ const FormInvoices = () => {
       {isHidden && (
         <>
         <div className='add-product-form'>
-          <AddProduct />
+          <AddProduct onChildValue={handleChildValue}/>
         </div>
         <div className='product-list'>
-          <ProductsList />
+          <ProductsList receivedValue={receivedValue}/>
         </div>
       </>
       )}

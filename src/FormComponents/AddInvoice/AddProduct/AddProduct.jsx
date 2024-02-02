@@ -7,6 +7,7 @@ import Select from '@mui/material/Select';
 import Button from '@mui/material/Button'
 import '../AddProduct/AddProduct.css'
 
+
 const addProductButton = {
   "&": {
     backgroundColor: "rgba(0, 0, 0, 0.783)"
@@ -19,7 +20,7 @@ const addProductButton = {
   }
 };
 
-const AddProduct = () => {
+const AddProduct = ({onChildValue}) => {
 
   const [productName, setProductName] = useState('');
   const [quantity, setQuantity] = useState('');
@@ -33,7 +34,13 @@ const AddProduct = () => {
     formData.append('price', price)
     formData.append('vat', vat)
 
-
+    const productsDict = {
+      'productName': productName,
+      'quantity': quantity,
+      'price': price,
+      'vat':vat
+    }
+    onChildValue(productsDict);
     try {
       const response = await fetch('/get_product', {
         method: 'POST',

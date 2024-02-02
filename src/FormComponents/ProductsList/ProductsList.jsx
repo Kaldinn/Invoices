@@ -27,15 +27,20 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
+function createData(name, quantity, price, vat) {
+  return { name, quantity, price, vat };
 }
 
-const rows = [
-  createData('Dinner', 159, 6.0, 24),
-];
 
-export default function ProductsList() {
+
+export default function ProductsList({receivedValue}) {
+  const productName = receivedValue.productName
+  const quantity = receivedValue.quantity
+  const price = receivedValue.price
+  const vat = receivedValue.vat
+  const rows = [
+    createData(productName, quantity, price, vat)
+  ];
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
@@ -43,13 +48,13 @@ export default function ProductsList() {
           <TableRow>
             <StyledTableCell>Product Name</StyledTableCell>
             <StyledTableCell align="right">Quantity</StyledTableCell>
-            <StyledTableCell align="right">Price&nbsp;$</StyledTableCell>
-            <StyledTableCell align="right">Vat&nbsp;%</StyledTableCell>
+            <StyledTableCell align="right">Price</StyledTableCell>
+            <StyledTableCell align="right">Vat</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <StyledTableRow key={row.name}>
+            <StyledTableRow >
               <StyledTableCell component="th" scope="row">
                 {row.name}
               </StyledTableCell>
