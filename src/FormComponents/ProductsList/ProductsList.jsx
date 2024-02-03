@@ -61,6 +61,7 @@ export default function ProductsList({receivedValue}) {
               <StyledTableCell align="right"></StyledTableCell>
               <StyledTableCell align="right"></StyledTableCell>
               <StyledTableCell align="right"></StyledTableCell>
+              <StyledTableCell align="right"></StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>
