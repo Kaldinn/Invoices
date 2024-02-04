@@ -50,6 +50,8 @@ export default function ProductsList({receivedValue}) {
             <StyledTableCell align="right">Quantity</StyledTableCell>
             <StyledTableCell align="right">Price</StyledTableCell>
             <StyledTableCell align="right">Vat</StyledTableCell>
+            <StyledTableCell align="right">Vat</StyledTableCell>
+            <StyledTableCell align="right">Vat</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -58,7 +60,6 @@ export default function ProductsList({receivedValue}) {
               <StyledTableCell component="th" scope="row">
                 {row.name}
               </StyledTableCell>
-              <StyledTableCell align="right"></StyledTableCell>
               <StyledTableCell align="right"></StyledTableCell>
               <StyledTableCell align="right"></StyledTableCell>
               <StyledTableCell align="right"></StyledTableCell>
